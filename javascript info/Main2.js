@@ -187,3 +187,13 @@ function sequentialSizes(val) {
      return answer
 }
 console.log(sequentialSizes(2));
+
+//build javascript objects
+
+var ourDog ={
+    "name": "jimmy",
+    "legs":4,
+    "tails": 1,
+    "friends":["everything"]
+};
+
