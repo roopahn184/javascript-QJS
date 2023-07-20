@@ -22,3 +22,10 @@ const users =[
         
         people.sort((person1, person2)=>person1.age - person2.age)
         console.log(people)
+
+        // sort the array with alphabetically
+        const fruits =["apple", "Orange", "banana", "grapes"]
+        fruits.sort((a,b)=>a.toLowerCase().localeCompare(b.toLowerCase()))
+        console.log(fruits)
+        
+   
