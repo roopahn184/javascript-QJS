@@ -25,7 +25,14 @@
         student.age = 22,
         student.studied = "computer science";
         document.getElementById("demo").innerHTML = student.name + "of the age" + student.age + "studies" + student.studied;
-    
-    
-</script>
+    </script>
+    <script>
+        function stud(name, age, studied) {
+            this.name = name;
+            this.age = age;
+            this.studied = studies;
+        }
+        var student =stud("chris", 22, "computer science")
+        document.getElementById("demo").innerHTML = student.name + "of the age" + student.age + "studies" + student.studied;
+    </script>
 </html>

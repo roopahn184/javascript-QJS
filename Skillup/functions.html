@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Functions</title>
+</head>
+<body>
+    <h1>Javascript functions</h1>
+    <h1><p id="demo"></p></h1>
+    
+</body>
+<script>
+    function my_function(val){
+        return document.getElementById("demo").innerHTML = val*val; 
+    }
+    my_function(10)
+</script>
+<script>
+ x = function(){
+    return alert("hello")
+ }
+ let y = x
+ document.getElementById("demo").innerHTML = y();
+</script>
+<script>
+    var myfunction = new Function("a", "b", "return a+b")
+     var x = myfunction(2, 3)
+    document.getElementById("demo").innerHTML = "the sum is" + x;
+</script>
+<script>
+    (function () {
+        alert("hello welcome")
+    })()
+</script>
+<script>
+    function first_function(a, b){
+      return a*b;
+    };
+    let z = first_function(2, 5);
+    document.getElementById("demo").innerHTML = "the product is" + z;
+    </script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Creating Javascript objects</h1>
+    <h1><p id="demo"></p></h1>
+</body>
+<script>
+    var car ={
+        model1:"honda 320",
+        color:"blue",
+        fuel_type:"diesel",
+        get fuel(){
+            return this.fuel_type;
+        },
+        get model(){
+        return this.model1;
+        }
+    }
+    document.getElementById("demo").innerHTML = car.fuel;
+    document.getElementById("demo").innerHTML = car.model1;
+
+</script>
+<script>
+    var car = {
+        model1:"audi 100",
+        color:"red",
+        fuel_type: "",
+        set fuel(fuel){
+        this.fuel_type = fuel;
+        }
+    }
+    car.fuel ="petrol";
+    document.getElementById("demo").innerHTML = car.fuel_type;
+</script>
+</html>
