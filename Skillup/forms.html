@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <script type="text/javascript">
+        function Validate(){
+            if(document.myform.Email.value == ""){
+                alert("please provide your Email id");
+                document.myform.Email.focus()
+                return false
+            }else if(document.myform.Password.value == ""){
+                alert("please enter your password")
+                document.myform.Password.focus()
+                return false
+            }else{
+                return true
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <form action="message.html" name="myform" onsubmit=" return(Validate())">
+        <input name = Email placeholder="Email" type="text"> <br>
+        <input name = Password placeholder="Password" type="text"> <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

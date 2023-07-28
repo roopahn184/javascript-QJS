@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript closure</title>
+</head>
+<title>closure</title>
+<p id="demo"></p>
+<body>
+    <!-- <script>
+    let a = 10;
+    function my_func(){
+        let b = 20;
+        document.write(a + b);
+    }
+    my_func()
+</script> -->
+<script>
+    var a = 10;
+    function first_function(){
+        var b = 20;
+        function second_function() {
+           let c = a+b;
+            return c;
+        }
+         return second_function()
+    }
+    var sum = first_function()
+    document.write(sum) ;
+
+</script>
+    
+</body>
+</html>
