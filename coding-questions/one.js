@@ -30,17 +30,29 @@ const passengers = [
   ];
 
   //using for loop
-//   const passengersName =[];
-//   for(let i = 0; i < passengers.length; i++){
-//     passengersName.push(passengers[i].passengerName)
+//   const passengerName = [];
+//   for(let i = 0; i<passengers.length; i++){
+//     passengerName.push(passengers[i].passengerName)
 //   }
-//   console.log("passengers", passengersName)
+//  console.log("passengers", passengerName);
 
-  //using foreach
-  const passengerName =[]
-  passengers.forEach((passengers)=>{
-    passengerName.push(passengers.passengerName)
-  })
-  console.log("passengers", passengerName);
+// using foreach() method
+
+// const passengerName = [];
+// passengers.forEach((passenger)=>{
+//   passengerName.push(passenger.passengerName)
+// })
+// console.log("passenger", passengerName);
+
+// using map method
+const passengerName = passengers.map((passenger)=>passenger.passengerName)
+console.log("passengers", passengerName);
+
+
+
+
+
+
+ 
 
 
