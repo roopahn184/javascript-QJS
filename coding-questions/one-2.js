@@ -26,3 +26,18 @@ const passengers = [
   ];
 
   //how to sort passengers by connecting flights
+  //descending order
+
+  const numofFlights = passengers.sort(
+    (passenger1, passenger2)=>
+    passenger2.connectedFlights - passenger1.connectedFlights
+  );
+  console.log(numofFlights);
+  //assending order//
+  const totalFlights = passengers.sort(
+    (passenger1, passenger2)=>
+    passenger1.connectedFlights - passenger2.connectedFlights
+  )
+  console.log(totalFlights);
+
+  
