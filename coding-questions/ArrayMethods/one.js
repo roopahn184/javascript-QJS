@@ -32,4 +32,49 @@ for(let i =0; i<array.length; i++){
     )
   
  // How do you check if an element exists in an array?
-    
+    if(array.indexOf(3) !== -1){
+       console.log("element is there");
+    }
+    else{
+        console.log("element does not exist");
+    }
+   
+  // How do you remove an element from an array at a specific index?
+  let fruits = ["banana", "mango", "orange","grapes","apple"]
+  // to remove the elements
+  fruits.splice(2,1)
+  console.log(fruits);
+  // to add the elements
+  fruits.splice(2,0, "cherry", "sweet");
+  console.log(fruits)
+
+  //How do you concatenate two arrays in JavaScript?
+  let x= [1,2];
+  let y =[3,4];
+  let newArray = x.concat(y)
+  console.log(newArray);
+
+  //  What is the difference between .filter() and .find()?
+  // filter() method - return new array with all elements
+  const numbers = [1, 2, 3, 4,5]
+  const evenNumbers = numbers.filter(num => num % 2 === 0)
+  console.log(evenNumbers);
+
+  const addNumbers = numbers.filter(num => num % 2 === 1)
+  console.log(addNumbers);
+
+  //find() method - it return the value of the first element in the array
+  const firstEvenNumbers = numbers.find(num => num % 2 === 0)
+  console.log(firstEvenNumbers);
+
+//How do you sort an array in JavaScript?
+const users = ["roopa", "divya", "sushmitha", "shravs"]
+users.sort();
+console.log(users);
+
+//How do you flatten a nested array in JavaScript?
+const nestedArray = [1, [2, 3], [4, [5, 6]]];
+const flattenedArray = nestedArray.reduce((accumulator, current)=>{
+    return accumulator.concat(current);
+}, [])
+console.log(flattenedArray)
