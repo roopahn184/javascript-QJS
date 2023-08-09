@@ -1,0 +1,13 @@
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+}
+.flex-container > div{
+    width: 100px;
+   margin: 10px;
+   background-color: #fff;
+   line-height: 75px;
+   text-align: center;
+   font-size: 20px;
+}
